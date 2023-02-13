@@ -7,7 +7,7 @@ This project tested my abilities to offset items and then make them responsive. 
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/screenshot.jpg)
 
 
 ### Links
