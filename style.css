@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+    background-color: aliceblue;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  :root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+  }
+
+ main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+     background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
+     background-position: left top, right bottom;
+     background-repeat: no-repeat;
+    padding: 8%;
+    max-width: 90vw;
+    background-color: var(--white);
+ }
+.header {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+}
+.header_content {
+    width: 40%;
+    font-size: 1rem;
+    color: var(--Dark-Grayish-Magenta);
+    font-weight: 700;
+}
+ .header_content h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    letter-spacing: -2px;
+    line-height: 3rem;
+    color: var(--Very-Dark-Magenta);
+    margin-bottom: 1.5rem;
+ }
+ .header_reviews {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+ }
+ .review {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: var(--Light-Grayish-Magenta);
+  padding: 1rem 2rem 1rem 1rem;
+  margin: 0.5rem;
+  width: 70%;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--Very-Dark-Magenta);
+ }
+.header_reviews .review .star-container {
+  margin-right: 1.5rem;
+}
+ .review img {
+  float: left;
+ }
+
+ .review2 {
+  margin-left: 2.5rem;
+ }
+.review3 {
+  margin-left: 6rem;
+}
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial {
+  background-color: var(--Very-Dark-Magenta);
+  width: 30%;
+  border-radius: 10px;
+  padding: 1.5rem;
+  color: var(--white);
+  font-size: 15[x];
+  font-weight: 500;
+}
+.testimonial-header {
+  display: flex;
+}
+.testimonial-header img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.testimonial-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-title h2 {
+  font-size: 15px;
+}
+.buyer {
+  color: var(--Soft-Pink);
+}
+
+.testimonial2 {
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+}
+
+.testimonial3 {
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+}
+
+@media (max-width: 600px) {
+  .card{
+    background-image: url("./images/bg-pattern-top-mobile.svg"), url("./images/bg-pattern-bottom-mobile.svg");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    padding: 1rem;
+    margin: 0;
+  }
+  .header {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20%;
+  }
+  .header_content {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .header_content h1 {
+    font-size: 2.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .header_reviews {
+    width: 95%;
+  }
+  .header_reviews .review .star-container {
+    margin-right: 0rem;
+    margin-bottom:0.5rem;
+  }
+  .review {
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .testimonials {
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
+  .testimonial {
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 15px;
+  }
+  .testimonial-header {
+    margin-bottom: 1rem;
+  }
+}
