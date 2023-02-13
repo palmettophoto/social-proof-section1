@@ -12,8 +12,8 @@ This project tested my abilities to offset items and then make them responsive. 
 
 ### Links
 
-- Solution URL: [Social Proof](https://palmettophoto/social-proof-section.git)
-- Live Site URL: [View live solution](https://palmettophoto.github.io/social-proof-section/)
+- Solution URL: [Social Proof](https://palmettophoto/social-proof-section1.git)
+- Live Site URL: [View live solution](https://palmettophoto.github.io/social-proof-section1/)
 
 ## My process
 
